@@ -49,7 +49,50 @@ Standard radiological convention (`MONOCHROME2`) assumes higher density values (
 $$D_{inverted}(x, y) = 255 - D(x, y)$$
 
 ---
+Here is the formalized project structure based on your provided directory tree. You can replace the existing "Section 3: System Architecture and Implementation" overview in your report with this formatted breakdown.
 
+---
+
+### 3. Project Directory Structure and Organization
+
+To ensure modularity and maintainability, the project is organized into distinct directories separating the core computational logic, testing frameworks, and output generation. The repository follows a standard hierarchical structure:
+
+**Directory Tree:**
+
+```text
+📦 Project Root
+ ┣ 📂 Scripts
+ ┃ ┣ 📜 dicom_parser.py
+ ┃ ┣ 📜 dicom_series.py
+ ┃ ┣ 📜 image_export.py
+ ┃ ┗ 📜 processing_engine.py
+ ┣ 📂 Test Outputs
+ ┃ ┣ 🖼️ test 1.png
+ ┃ ┣ 🖼️ test 2.png
+ ┃ ┣ 🖼️ test 3.png
+ ┃ ┣ 🖼️ test 4.png
+ ┃ ┣ 🖼️ test 5.png
+ ┃ ┗ 🖼️ test 6.png
+ ┣ 📂 Test
+ ┃ ┗ 📜 local series test.py
+ ┣ 📜 .gitignore
+ ┗ 📜 README.md
+
+```
+
+**Module and Directory Descriptions:**
+
+* **`Scripts/` (Computational Core & I/O Operations):**
+This directory contains the primary backend modules responsible for data extraction and mathematical transformations.
+* `dicom_parser.py`: Manages the ingestion of individual DICOM files, safely extracting metadata and handling specialized codec anomalies.
+* `dicom_series.py`: Handles volumetric data aggregation, structurally sorting multiple 2D matrices into anatomically accurate 3D tensors based on spatial coordinates.
+* `processing_engine.py`: Executes all vectorized mathematical operations, including Hounsfield Unit (HU) derivations, piecewise windowing normalization, and Region of Interest (ROI) statistical computations.
+* `image_export.py`: Encodes the processed discrete matrices into web-standard formats (Base64/PNG) for downstream visual rendering.
+
+
+* **`Test/` (Validation Framework):**
+* `local series test.py`: Serves as the primary execution script and Command Line Interface (CLI) to validate the pipeline. It orchestrates the processing of single files, discrete series, or batch operations to verify algorithmic integrity.
+---
 ## System Architecture and Implementation
 
 The codebase was structured into highly cohesive, decoupled Python modules to separate input/output operations from complex mathematical processing.
