@@ -171,12 +171,8 @@ pip install pylibjpeg pylibjpeg-libjpeg pylibjpeg-openjpeg python-gdcm
 <img width="256" height="256" alt="test 3" src="https://github.com/user-attachments/assets/b09aff3e-77e6-47b5-9f1b-4e82be736886" />
 
 ---
+
 ## References
-Here is a list of formal academic references formatted in APA style. These cover the DICOM standard, the underlying physics (Hounsfield Units, Windowing), and the Python libraries used in your pipeline. You can add this as the final section of your report.
-
----
-
-## 7. References
 
 1. **National Electrical Manufacturers Association (NEMA).** (2024). *Digital Imaging and Communications in Medicine (DICOM) Standard*. Rosslyn, VA: NEMA. Retrieved from [https://www.dicomstandard.org/](https://www.dicomstandard.org/)
 2. **Bushberg, J. T., Seibert, J. A., Leidholdt, E. M., & Boone, J. M.** (2011). *The Essential Physics of Medical Imaging* (3rd ed.). Lippincott Williams & Wilkins. (Reference for Hounsfield Units and Computed Tomography physics).
