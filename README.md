@@ -166,9 +166,9 @@ pip install pylibjpeg pylibjpeg-libjpeg pylibjpeg-openjpeg python-gdcm
 ```
 ---
 ## Results
-<img width="512" height="512" alt="test 1" src="https://github.com/user-attachments/assets/2f7191c6-6cbb-461a-aafc-14149a9fd696" />
-<img width="512" height="512" alt="test 2" src="https://github.com/user-attachments/assets/5b91179d-d7d8-45b2-820d-e9c22cec9ce8" />
-<img width="512" height="512" alt="test 3" src="https://github.com/user-attachments/assets/b09aff3e-77e6-47b5-9f1b-4e82be736886" />
+<img width="256" height="256" alt="test 1" src="https://github.com/user-attachments/assets/2f7191c6-6cbb-461a-aafc-14149a9fd696" />
+<img width="256" height="256" alt="test 2" src="https://github.com/user-attachments/assets/5b91179d-d7d8-45b2-820d-e9c22cec9ce8" />
+<img width="256" height="256" alt="test 3" src="https://github.com/user-attachments/assets/b09aff3e-77e6-47b5-9f1b-4e82be736886" />
 
 ---
 ## References
