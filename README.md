@@ -167,9 +167,14 @@ pip install pylibjpeg pylibjpeg-libjpeg pylibjpeg-openjpeg python-gdcm
 ---
 ## Results
 <img width="256" height="256" alt="test 1" src="https://github.com/user-attachments/assets/2f7191c6-6cbb-461a-aafc-14149a9fd696" />
+Upper Chest Rendering : The pipeline accurately preserves the contrast of the upper mediastinum, cleanly isolating the low-density air in the trachea from the high-density skeletal structures.
 <img width="256" height="256" alt="test 2" src="https://github.com/user-attachments/assets/5b91179d-d7d8-45b2-820d-e9c22cec9ce8" />
+Mid-Cardiac Level Rendering
+This slice showcases the pipeline's ability to apply precise soft-tissue windowing. The central cardiac silhouette and the descending aorta (the circular structure just above the spine) are clearly delineated. This demonstrates accurate pixel intensity scaling and Hounsfield Unit (HU) mapping from the raw DICOM matrix to standard PNG format without losing the finer details of the surrounding lung parenchyma.
 <img width="256" height="256" alt="test 3" src="https://github.com/user-attachments/assets/b09aff3e-77e6-47b5-9f1b-4e82be736886" />
 
+Sequential Cardiac Level Rendering
+Extracted from a slightly different axial position within the same series, this output highlights the pipeline's rendering stability across continuous slices. It captures subtle morphological changes in the heart's chambers and surrounding vasculature compared to Output 2. This proves the system's reliability in processing slice-by-slice volumetric data while maintaining consistent contrast levels and spatial resolution.
 ---
 
 ## References
